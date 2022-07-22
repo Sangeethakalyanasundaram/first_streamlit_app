@@ -23,7 +23,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 
 #New section to display fruityvice api response
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 
 
 # take the json verison of the response and normalize it
