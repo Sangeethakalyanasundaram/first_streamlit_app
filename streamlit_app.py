@@ -42,8 +42,8 @@ streamlit.dataframe(fruits_to_show)
       # output it in the screen as table
  #     streamlit.dataframe(back_from_function)
 
-except URLError as e:
-      streamlit.error()
+#except URLError as e:
+ #     streamlit.error()
 
 streamlit.stop()
 
