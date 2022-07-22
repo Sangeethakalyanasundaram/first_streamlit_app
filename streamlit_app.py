@@ -13,7 +13,7 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 
 # Let's put a pick list here so they can pick the fruit they want to include 
-fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
+fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['cantalope'])
 fruits_to_show=my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
@@ -21,7 +21,7 @@ streamlit.dataframe(fruits_to_show)
 
 streamlit.header("Fruityvice Fruit Advice!")
 #Add a Text Entry Box and Send the Input to Fruityvice as Part of the API Call
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+fruit_choice = streamlit.text_input('What fruit would you like information about?','orange')
 streamlit.write('The user entered ', fruit_choice)
 
 
@@ -45,7 +45,7 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 # allow the end user to add a fruit to the list
-add_my_fruit=streamlit.text_input('What fruit would you like to add?','jackfruit')
+add_my_fruit=streamlit.text_input('What fruit would you like to add?','cantalope')
 streamlit.write('Thanks for adding', add_my_fruit)
 
 
